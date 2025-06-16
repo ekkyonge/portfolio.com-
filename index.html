@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kelly+Slab&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- ICONS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- SWIPER -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <!-- TAILWIND -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <header
+      class="bg-transparent absolute top-0 left-0 w-full items-center z-10 sticky"
+    >
+      <div class="mx-auto max-w-screen-xl px-4 sm:px-9 lg:px-3">
+        <div class="flex h-16 items-center justify-between">
+          <div class="md:flex md:items-center md:gap-9">
+            <a
+              class="block text-teal-600 dark:text-teal-600"
+              href="#home"
+              style="
+                background-image: radial-gradient(
+                  circle at 120.71% 50%,
+                  #b8fff7 0,
+                  #00c9fa 100%
+                );
+                padding: -30px;
+                border-radius: 10px;
+              "
+            >
+              <span class="sr-only">Home</span>
+              <img src="img/logo1.png" alt="logo" style="width: 50px" />
+            </a>
+          </div>
+          <div class="hidden md:block">
+            <nav aria-label="Global">
+              <ul
+                class="flex items-center gap-15 text-xl"
+                style="color: #fbf9e4"
+              >
+                <li>
+                  <a
+                    class="transition hover:text-yellow-500/75 dark:text-white dark:hover:text-white/75"
+                    href="#about"
+                  >
+                    About
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="transition hover:text-yellow-500/75 dark:text-white dark:hover:text-white/75"
+                    href="#tools"
+                  >
+                    Tools
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="transition hover:text-yellow-500/75 dark:text-white dark:hover:text-white/75"
+                    href="#project"
+                  >
+                    Project
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+          <div class="flex items-center gap-4">
+            <div class="sm:flex sm:gap-4">
+              <a
+                class="rounded-xl bg-yellow-500 px-5 py-2.5 text-sm font-medium text-white shadow-sm dark:hover:bg-teal-500"
+                href="#contact"
+              >
+                Contact
+              </a>
+            </div>
+            <div class="block md:hidden relative">
+              <button
+                id="hamburger"
+                class="rounded-sm bg-gray-100 p-2 text-gray-600 transition hover:text-gray-600/75 dark:bg-gray-800 dark:text-white dark:hover:text-white/75"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="size-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M4 6h16M4 12h16M4 18h16"
+                  />
+                </svg>
+              </button>
+              <nav
+                id="nav-menu"
+                class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w[250px] w-40 right-6 mt-4"
+              >
+                <ul class="block">
+                  <li class="group">
+                    <a
+                      href="#about"
+                      class="text-base text-dark py-2 mx-8 flex group-hover:text-yellow-500"
+                      >About</a
+                    >
+                  </li>
+                  <li class="group">
+                    <a
+                      href="#tools"
+                      class="text-base text-dark py-2 mx-8 flex group-hover:text-yellow-500"
+                      >Tools</a
+                    >
+                  </li>
+                  <li class="group">
+                    <a
+                      href="#project"
+                      class="text-base text-dark py-2 mx-8 flex group-hover:text-yellow-500"
+                      >Project</a
+                    >
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- NAVBAR END -->
+
+    <!-- JUMBOTRON -->
+    <section id="home" class="pt-15 lg:mb-12 lg:pt-25 md:pt-20">
+      <div class="container">
+        <div class="flex flex-wrap lg:ml-50">
+          <div class="w-full self-center px-4 lg:w-1/2" style="color: #fbf9e4">
+            <h1 class="text-3xl md:text-3xl lg:text-6xl lg:mb-8">
+              Hi👋, I'm <span class="text-yellow-500"> Ekki. </span>
+            </h1>
+            <h2 class="text-lg md:text-xl lg:text-5xl">Web Developer</h2>
+            <hr style="color: gold; width: 300px" />
+            <br />
+            <strong
+              >- Saya adalah seorang
+              <i class="text-yellow-500">fresh graduate </i> IT -</strong
+            >
+            <p class="mb-9">
+              gemar belajar dan menciptakan website yang menarik dan fungsional.
+            </p>
+            <a target="_blank"
+              href="https://drive.google.com/file/d/1dTOMkH8GMKJbVQoJ23W4pVvuihrYsd3G/view?usp=sharing"
+              class="btn text-base font-semibold text-gray-800 py-3 px-7 rounded-full hover:shadow-lg"
+              >Download CV <i class="fa-solid fa-download ml-1"></i
+            ></a>
+          </div>
+          <div class="w-full self-end px-4 lg:w-1/2">
+            <div class="img bottom-0 mt-12">
+              <p style="text-align: center">
+                <img
+                  src="img/img1.png"
+                  alt="Ekki"
+                  class="max-w-full mx-auto lg:mr-60"
+                />
+                <span class="lg:mr-40"> - Muhammad Ekki Pratama S.Kom - </span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- JUMBOTRON END -->
+
+    <!-- ABOUT -->
+    <section id="about" class="about pt-36 pb-32 lg:p-30">
+      <div class="container1">
+        <div class="flex flex-wrap" style="text-align: justify">
+          <div class="w-full px-4 mb-12 lg:w-1/2 lg:px-15">
+            <h1 class="text-2xl lg:text-3xl mb-4 mt-5">
+              Tentang <span class="text-yellow-500">Saya</span>
+            </h1>
+            <span class="text-sm lg:text-base"
+              >Saya adalah seorang <i>fresh graduate</i> dari jurusan Teknologi
+              Informasi, Universitas Muhammadiyah Sumatera Utara (UMSU) dan
+              lulus pada tahun 2024. Saya memiliki minat yang besar dalam
+              mempelajari dan mengembangkan kemampuan di bidang
+              <i>web developer.</i> Saya juga telah mengikuti salah satu
+              bootcamp yang menambah pengalaman mengerjakan berbagai proyek
+              terkait pengembangan web, baik dari sisi <i>front end</i> maupun
+              <i>back end</i>. Saya bersemangat untuk terus belajar dan mengasah
+              skill agar dapat berkontribusi secara profesional di dunia
+              IT.</span
+            >
+          </div>
+          <div class="w-full px-4 lg:w-1/2 lg:px-15">
+            <h1 class="text-2xl lg:text-3xl mb-4 lg:mt-6 lg:mb-3">
+              Sosial <span class="text-yellow-500">media</span>
+            </h1>
+            <span class="text-sm lg:text-base"
+              >Ikuti saya di platform media sosial untuk mendapatkan informasi
+              terbaru mengenai karya, proyek, dan perjalanan belajar saya dalam
+              bidang teknologi. Saya terbuka untuk menjalin koneksi dan
+              kolaborasi yang bermanfaat.</span
+            >
+            <div class="flex items-center mt-5 mb-5">
+              <a
+                href="https://www.instagram.com/ekiyonge._?igsh=cno0aTZ0dWt3enBo"
+                target="_blank"
+                class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-400 hover:bg-yellow-500"
+              >
+                <svg
+                  role="img"
+                  width="20"
+                  class="fill-current"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>Instagram</title>
+                  <path
+                    d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077"
+                  />
+                </svg>
+              </a>
+              <a
+                href="https://wa.me/6285831029401"
+                target="_blank"
+                class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-400 hover:bg-yellow-500"
+              >
+                <svg
+                  role="img"
+                  width="20"
+                  class="fill-current"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>WhatsApp</title>
+                  <path
+                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"
+                  />
+                </svg>
+              </a>
+              <a
+                href="https://discordapp.com/users/1333668690054352971"
+                target="_blank"
+                class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-400 hover:bg-yellow-500"
+              >
+                <svg
+                  role="img"
+                  width="20"
+                  class="fill-current"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>Discord</title>
+                  <path
+                    d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z"
+                  />
+                </svg>
+              </a>
+              <a
+                href="https://www.facebook.com/share/19YrjP6ab9/"
+                target="_blank"
+                class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-400 hover:bg-yellow-500"
+              >
+                <svg
+                  role="img"
+                  width="20"
+                  class="fill-current"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>Facebook</title>
+                  <path
+                    d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647Z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ABOUT END -->
+
+    <!-- TOOLS -->
+    <div id="tools" class="tools">
+      <h1
+        class="text-2xl font-semibold lg:text-3xl mb-8 mt-5 text-yellow-500"
+        style="text-align: center"
+      >
+        Tools <span class="text-white">yang dipakai</span>
+      </h1>
+      <div
+        class="grid grid-cols-2 gap-5 lg:grid-cols-3 lg:gap-8 px-6 md:px-20 lg:px-25"
+      >
+        <div class="card-tools flex items-center h-20 rounded gap-5 px-4">
+          <img
+            src="tools/p1.png"
+            alt="postgre"
+            class="w-15 h-15 bg-gray-700 rounded-lg"
+          />
+          <div class="name-tools text-base/2 md:text-xl/2 lg:text-2xl/2">
+            <h2 class="text-yellow-500">VS Code</h2>
+            <p>Code editor</p>
+          </div>
+        </div>
+        <div class="card-tools flex items-center h-20 rounded gap-5 px-4">
+          <img
+            src="tools/p2.png"
+            alt="postgre"
+            class="w-15 h-15 bg-gray-700 rounded-lg"
+          />
+          <div class="name-tools text-base/2 md:text-xl/2 lg:text-2xl/2">
+            <h2 class="text-yellow-500">HTML</h2>
+            <p>Language</p>
+          </div>
+        </div>
+        <div class="card-tools flex items-center h-20 rounded gap-5 px-4">
+          <img
+            src="tools/p4.png"
+            alt="postgre"
+            class="w-15 h-15 bg-gray-700 rounded-lg"
+          />
+          <div class="name-tools text-base/2 md:text-xl/2 lg:text-2xl/2">
+            <h2 class="text-yellow-500">Tailwind CSS</h2>
+            <p>Framework</p>
+          </div>
+        </div>
+        <div class="card-tools flex items-center h-20 rounded gap-5 px-4">
+          <img
+            src="tools/p5.png"
+            alt="postgre"
+            class="w-15 h-15 bg-gray-700 rounded-lg"
+          />
+          <div class="name-tools text-base/2 md:text-xl/2 lg:text-2xl/2">
+            <h2 class="text-yellow-500">Bootstrap</h2>
+            <p>Framework</p>
+          </div>
+        </div>
+        <div class="card-tools flex items-center h-20 rounded gap-5 px-4">
+          <img
+            src="tools/p6.png"
+            alt="postgre"
+            class="w-15 h-15 bg-gray-700 rounded-lg"
+          />
+          <div class="name-tools text-base/2 md:text-xl/2 lg:text-2xl/2">
+            <h2 class="text-yellow-500">Javascript</h2>
+            <p>Language</p>
+          </div>
+        </div>
+        <div class="card-tools flex items-center h-20 rounded gap-5 px-4">
+          <img
+            src="tools/p7.png"
+            alt="postgre"
+            class="w-15 h-15 bg-gray-700 rounded-lg"
+          />
+          <div class="name-tools text-base/2 md:text-xl/2 lg:text-2xl/2">
+            <h2 class="text-yellow-500">NodeJS</h2>
+            <p>JS Runtime</p>
+          </div>
+        </div>
+        <div class="card-tools flex items-center h-20 rounded gap-5 px-4">
+          <img
+            src="tools/p8.png"
+            alt="postgre"
+            class="w-15 h-15 bg-gray-700 rounded-lg"
+          />
+          <div class="name-tools text-base/2 md:text-xl/2 lg:text-2xl/2">
+            <h2 class="text-yellow-500">Github</h2>
+            <p>Repository</p>
+          </div>
+        </div>
+        <div class="card-tools flex items-center h-20 rounded gap-5 px-4">
+          <img
+            src="tools/logo1.png"
+            alt="postgre"
+            class="w-15 h-15 bg-gray-700 rounded-lg"
+          />
+          <div class="name-tools text-base/2 md:text-xl/2 lg:text-2xl/2">
+            <h2 class="text-yellow-500">PostgreSQL</h2>
+            <p>Database</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- TOOLS END -->
+
+    <!-- PROJECT -->
+    <h1
+      id="project"
+      class="text-2xl font-semibold lg:text-3xl mb-8 mt-30 text-yellow-500"
+      style="text-align: center"
+    >
+      Project <span class="text-white">Saya</span>
+    </h1>
+    <div class="container2 swiper">
+      <div class="wrapper">
+        <div class="card-list swiper-wrapper">
+          <div class="card swiper-slide">
+            <div class="card-image">
+              <img src="img/proyek3.png" alt="proyek" />
+              <h5 class="card-tag">Project 1</h5>
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">Bang's Cafe</h3>
+              <h5 class="card-text">
+                Website Bang's Cafe dibuat untuk memudahkan pengunjung dalam
+                melakukan pemesanan lapangan badminton dan menu cafe. Pengunjung
+                dapat memesan lapangan, melihat ketersediaan menu makanan dan
+                minuman, dengan tujuan agar para pengunjung dapat berolahraga
+                dan bersantai di satu tempat.
+              </h5>
+              <div class="card-footer">
+                <div class="card-profile">
+                  <img src="img/own3.jpg" alt="Riefatul" />
+                  <div class="card-profile-info">
+                    <span class="card-profile-name">Bambang Hartono</span>
+                    <span class="card-profile-role">Owner</span>
+                  </div>
+                </div>
+                <a
+                  href="https://bc-6ipu.vercel.app/"
+                  target="_blank"
+                  class="card-button"
+                  >Read More</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="card swiper-slide">
+            <div class="card-image">
+              <img src="img/proyek6.png" alt="proyek" />
+              <h5 class="card-tag">Project 2</h5>
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">ifaastore.id_</h3>
+              <h5 class="card-text">
+                Website toko online sederhana dengan tema pink yang menampilkan
+                produk-produk fashion wanita. Pengguna dapat melihat daftar
+                produk, menambahkan item ke keranjang belanja, dan melihat total
+                harga secara langsung dalam antarmuka yang responsif dan
+                estetis.
+              </h5>
+              <div class="card-footer">
+                <div class="card-profile">
+                  <img src="img/own2.jpeg" alt="Riefatul" />
+                  <div class="card-profile-info">
+                    <span class="card-profile-name">Riefatul Mahfuza S.</span>
+                    <span class="card-profile-role">Owner</span>
+                  </div>
+                </div>
+                <a href="#" class="card-button">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="card swiper-slide">
+            <div class="card-image">
+              <img src="img/proyek4.png" alt="proyek" />
+              <h5 class="card-tag">Bootcamp</h5>
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">Portfolio</h3>
+              <h5 class="card-text">
+                Membuat web portfolio sesuai template yang diberikan oleh mentor
+                bootcamp dumbways. sebagai proyek akhir, web ini juga menerapkan
+                metode CRUD. Website ini harus dirancang dengan pendekatan
+                modern, responsif, dan terkoneksi kedalam database (PostgreSQL).
+              </h5>
+              <div class="card-footer">
+                <div class="card-profile">
+                  <img src="img/own5.png" alt="Riefatul" />
+                  <div class="card-profile-info">
+                    <span class="card-profile-name">Dumbways</span>
+                    <span class="card-profile-role">Bootcamp</span>
+                  </div>
+                </div>
+                <a href="#" class="card-button">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="card swiper-slide">
+            <div class="card-image">
+              <img src="img/proyek5.png" alt="proyek" />
+              <h5 class="card-tag">Bootcamp</h5>
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">Form Register & Login</h3>
+              <h5 class="card-text">
+                Membuat website dengan fitur form login dan registrasi yang
+                terhubung ke database PostgreSQL menggunakan metode CRUD.
+                Website ini memungkinkan pengguna untuk daftar, masuk, dan
+                mengelola data akun secara aman dan efisien.
+              </h5>
+              <div class="card-footer">
+                <div class="card-profile">
+                  <img src="img/own5.png" alt="Riefatul" />
+                  <div class="card-profile-info">
+                    <span class="card-profile-name">Dumbways</span>
+                    <span class="card-profile-role">Bootcamp</span>
+                  </div>
+                </div>
+                <a href="#" class="card-button">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </div>
+    <!-- PROJECT END -->
+
+    <!-- CONTACT -->
+    <section id="contact" class="pt-36 pb-32">
+      <div class="container">
+        <div class="w-full px-4">
+          <h1
+            class="text-2xl font-semibold lg:text-3xl mb-8 mt-5 text-yellow-500"
+            style="text-align: center"
+          >
+            Contact
+          </h1>
+        </div>
+        <form>
+          <div class="w-full md:mx-auto lg:w-1/2 lg:mx-auto">
+            <div class="w-full px-4 mb-8">
+              <label for="name" class="text-base font-semibold text-blue-300"
+                >Nama</label
+              >
+              <input
+                type="text"
+                id="name"
+                class="w-full bg-gray-700 text-white p-3 rounded-md focus:outline-none focus:ring-yellow-500 focus:ring-1 focus:border-yellow-500"
+              />
+            </div>
+            <div class="w-full px-4 mb-8">
+              <label for="email" class="text-base font-semibold text-blue-300"
+                >Email</label
+              >
+              <input
+                type="email"
+                id="email"
+                class="w-full bg-gray-700 text-white p-3 rounded-md focus:outline-none focus:ring-yellow-500 focus:ring-1 focus:border-yellow-500"
+              />
+            </div>
+            <div class="w-full px-4 mb-8">
+              <label for="message" class="text-base font-semibold text-blue-300"
+                >Pesan</label
+              >
+              <textarea
+                type="message"
+                id="message"
+                class="w-full bg-gray-700 text-white p-3 rounded-md focus:outline-none focus:ring-yellow-500 focus:ring-1 focus:border-yellow-500 h-32"
+              ></textarea>
+            </div>
+            <div class="w-full px-4">
+              <button
+                class="text-lg font-bold text-white bg-yellow-500 py-3 px-8 rounded-full w-full hover:opacity-80 hover:shadow-lg transition duration-500"
+              >
+                Kirim
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+    <!-- CONTACT END -->
+
+    <!-- FOOTER -->
+    <footer class="pt-24 pb-12">
+      <div class="container">
+        <div class="flex flex-wrap md:ml-40 lg:ml-50">
+          <div class="w-full px-4 mb-12 text-white font-medium md:w-1/3">
+            <h2 class="font-bold text-4xl text-yellow-500">EKKI</h2>
+            <h3 class="font-bold text-2xl mb-2">Junior Web Developer</h3>
+            <p>Muhammad Ekki Pratama</p>
+            <p>jl. Berlianraya No. 03</p>
+            <p>Deliserdang</p>
+          </div>
+          <div class="w-full px-4 mb-12 md:w-1/3">
+            <h3 class="font-semibold text-xl text-yellow-500 mb-5">
+              Hubungi saya
+            </h3>
+            <ul>
+              <li>
+                <a
+                  target="_blank"
+                  href="https://www.linkedin.com/in/muhammad-ekki-pratama-404474348?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                  class="inline-block text-base text-gray-300 hover:text-yellow-500 mb-3"
+                  >LinkedIn</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="inline-block text-base text-gray-300 hover:text-yellow-500 mb-3"
+                  >Github</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="w-full px-4 mb-12 md:w-1/3">
+            <h3 class="font-semibold text-xl text-yellow-500 mb-5">Tautan</h3>
+            <ul>
+              <li>
+                <a
+                  href="#about"
+                  class="inline-block text-base text-gray-300 hover:text-yellow-500 mb-3"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#tools"
+                  class="inline-block text-base text-gray-300 hover:text-yellow-500 mb-3"
+                  >Tools</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#project"
+                  class="inline-block text-base text-gray-300 hover:text-yellow-500 mb-3"
+                  >Project</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="w-full pt-10 border-t border-slate-500">
+          <div class="flex items-center justify-center mb-5">
+            <div class="flex items-center mt-5 mb-5">
+              <a
+                href="https://www.instagram.com/ekiyonge._?igsh=cno0aTZ0dWt3enBo"
+                target="_blank"
+                class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-400 hover:bg-yellow-500"
+              >
+                <svg
+                  role="img"
+                  width="20"
+                  class="fill-current"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>Instagram</title>
+                  <path
+                    d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077"
+                  />
+                </svg>
+              </a>
+              <a
+                href="https://wa.me/6285831029401"
+                target="_blank"
+                class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-400 hover:bg-yellow-500"
+              >
+                <svg
+                  role="img"
+                  width="20"
+                  class="fill-current"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>WhatsApp</title>
+                  <path
+                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"
+                  />
+                </svg>
+              </a>
+              <a
+                href="https://discordapp.com/users/1333668690054352971"
+                target="_blank"
+                class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-400 hover:bg-yellow-500"
+              >
+                <svg
+                  role="img"
+                  width="20"
+                  class="fill-current"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>Discord</title>
+                  <path
+                    d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z"
+                  />
+                </svg>
+              </a>
+              <a
+                href="https://www.facebook.com/share/19YrjP6ab9/"
+                target="_blank"
+                class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-400 hover:bg-yellow-500"
+              >
+                <svg
+                  role="img"
+                  width="20"
+                  class="fill-current"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>Facebook</title>
+                  <path
+                    d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647Z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <p class="footer font-medium text-sm text-center">
+            Dibuat oleh 💖 Muhammad Ekki Pratama, menggunakan Tailwind CSS.
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- FOOTER END -->
+
+    <!-- Link Swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- JS -->
+    <script src="main.js"></script>
+  </body>
+</html>
